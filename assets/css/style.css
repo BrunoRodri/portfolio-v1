@@ -250,6 +250,7 @@ header .list a:hover{
   overflow: hidden;
   background-color: #192d4b;
   transition: ease-in-out 250ms;
+  min-height: 450px;
 }
 
 .projects .item:hover{
