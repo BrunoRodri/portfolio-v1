@@ -15,11 +15,13 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #495670 #0a192f;
+  
 }
 
 html,
 body{
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -196,6 +198,8 @@ header .list a:hover{
 .about-inner .about-content .technologies{
   display: flex;
   flex-direction: column;
+  max-height: 170px;
+  flex-wrap: wrap;
   font-size: 1.3rem;
   padding-top: 1.5rem;
 }
@@ -391,4 +395,103 @@ footer{
   padding: 3rem;
   font-size: 1.4rem;
   color: #4cbaef;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  header .list {
+    gap: 2rem;
+    font-size: 2rem;
+  }
+
+  header .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+
+
+  .about-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .about-inner .image img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .about-inner .about-content .about-me {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+
+
+  .projects {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .projects .item {
+    width: 100%;
+  }
+
+  .contact-content .links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-content a {
+    font-size: 1.8rem;
+  }
+
+
+
+  .projects {
+    flex-direction: column;
+    gap: 3rem;
+    
+  }
+
+  .projects .item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .projects .details h2 {
+    font-size: 1.6rem;
+  }
+
+  .projects .details p {
+    font-size: 1.2rem;
+  }
+
+  .projects .tags .tag span {
+    font-size: 1rem;
+  }
+
+  .socials, .email{
+    display: none;
+  }
+
+  .about-inner{
+    flex-direction: column-reverse;
+  }
+
+
+  #about {
+    padding: 20rem 0 0;
+  }
+
+
 }
